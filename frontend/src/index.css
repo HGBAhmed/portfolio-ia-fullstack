@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Un petit fond dégradé subtil pour toute la page */
+body {
+  @apply bg-gradient-to-br from-gray-50 to-gray-200 min-h-screen text-gray-800;
+}

@@ -20,8 +20,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 2. Initialiser le modèle d'IA (Gemini Flash)
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+# 2. Récupérer la clé et initialiser le modèle
+api_key = os.getenv("GOOGLE_API_KEY")
+
+if not api_key:
+    # Cette ligne permet de voir tout de suite dans les logs Render si la clé est absente
+    raise ValueError("ERREUR : La variable GOOGLE_API_KEY n'est pas détectée !")
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    google_api_key=api_key    # On force l'utilisation de la clé récupérée
+)
 
 # 3. Définir le format des messages que le frontend va nous envoyer
 class ChatRequest(BaseModel):

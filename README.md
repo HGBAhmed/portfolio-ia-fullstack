@@ -10,7 +10,7 @@
 ---
 
 ## 🚀 Live Demo
-**[🔗 Accéder au Portfolio Interactif](https://portfolio-ia-fullstack-5mvbpvfhf-hgbahmeds-projects.vercel.app/)** *(Note : Le backend étant hébergé sur un tier gratuit, le premier message peut nécessiter ~40s pour réveiller le serveur).*
+**[🔗 Accéder au Portfolio Interactif](https://portfolio-ia-fullstack.vercel.app/)** *(Note : Le backend étant hébergé sur un tier gratuit, le premier message peut nécessiter ~40s pour réveiller le serveur).*
 
 ---
 
